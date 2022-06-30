@@ -1,0 +1,10 @@
+<resources>
+    <integer name="title_size">35</integer>
+    <integer name="text_size">28</integer>
+    <string name="navigation_drawer_close">Content</string>
+    <string name="app_name">Tuyệt thế đường môn</string>
+    <string name="navigation_drawer_open">Information</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

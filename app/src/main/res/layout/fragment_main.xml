@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentMain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="43dp"
+            android:textStyle="bold"
+            android:textColor="#EA0B0B"
+            android:text="ĐẤU LA ĐẠI LỤC II"/>
+
+        <Button
+            android:id="@+id/begin_read"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:textSize="40dp"
+            android:text="Đọc từ đầu"
+            android:textColor="#F1D908"
+            android:alpha="0.75"
+            android:background="@drawable/start_read_btn"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/list_chap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="23dp"
+            android:textColor="#F1D908"
+            android:fontFamily="@font/secondfont"
+            android:text="Danh sách chương"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/continue_read"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/thirdfont"
+            android:text="Đọc tiếp >>>"
+            android:visibility="gone"
+            android:textColor="#EC1E0F"
+            android:textSize="27dp" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentSetting">
+
+   <LinearLayout android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textStyle="bold"
+           android:textColor="#000"
+           android:layout_marginTop="20dp"
+           android:textSize="36dp"
+           android:text="Cài đặt"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="50dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="25dp"
+               android:textStyle="bold"
+               android:text="Cỡ chữ"/>
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:id="@+id/decrease_btn"
+               android:layout_toLeftOf="@+id/increase_btn"
+               android:src="@drawable/decrease"
+               android:layout_marginRight="20dp" />
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:id="@+id/increase_btn"
+               android:layout_alignParentEnd="true"
+               android:src="@drawable/increase"/>
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="30dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="25dp"
+               android:textStyle="bold"
+               android:layout_centerVertical="true"
+               android:text="Kiểu chữ"/>
+           <Button
+               android:id="@+id/stype_bold"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_alignParentEnd="true"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:text="B"/>
+           <Button
+               android:id="@+id/stype_normal"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_toLeftOf="@+id/stype_italic"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:text="N"/>
+           <Button
+               android:id="@+id/stype_italic"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_toLeftOf="@+id/stype_bold"
+               android:textSize="20dp"
+               android:textStyle=""
+               android:text="I"/>
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Màu chữ"/>
+            <Button
+                android:id="@+id/textB"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="#000"/>
+            <Button
+                android:id="@+id/textR"
+                android:layout_toLeftOf="@+id/textB"
+                android:layout_marginRight="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#D52828"/>
+            <Button
+                android:id="@+id/textBlu"
+                android:layout_toLeftOf="@+id/textR"
+                android:layout_marginRight="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#1177C8"/>
+        </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="30dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/selectfont"
+               android:textSize="25dp"
+               android:textStyle="bold"
+               android:layout_centerVertical="true"
+               android:text="Chọn phông chữ"/>
+           <ImageButton
+               android:id="@+id/right_btn"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/right_btn"
+               android:scaleType="fitXY"
+               android:layout_alignParentEnd="true"
+               android:textSize="20dp" />
+
+           <ImageButton
+               android:id="@+id/left_btn"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/left_btn"
+               android:scaleType="fitXY"
+               android:layout_toLeftOf="@id/right_btn"
+               android:textSize="20dp" />
+
+       </RelativeLayout>
+        <TextView
+            android:id="@+id/test_st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Đấu La Đại Lục II"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/close_btn"
+           android:layout_marginTop="30dp"
+           android:layout_gravity="center"
+           android:text="Đóng"/>
+   </LinearLayout>
+
+</ScrollView>
